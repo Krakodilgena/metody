@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void checkLeapYear(int year) {
 	//Задание 1
         boolean leapYear = isLeap (year);
         if (leapYear) {
@@ -42,7 +42,7 @@ public class Main {
         return deliveryDays;
     }
 
-    public static void validateString {
+    public static void validateString (String sort) {
         char[] letters = str.toCharArray();
         char preyChar = Character.MAX_VALUE;
         for (char c : letters)
