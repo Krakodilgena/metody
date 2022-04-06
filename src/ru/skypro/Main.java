@@ -18,13 +18,13 @@ public class Main {
         int currentYear = LocalDate.now().getYear();
         if (clientOS == 0) {
             if (deviceYear < currentYear) {
-                System.out.println("Установите упрощенную версию для IOS");
+                System.out.println("Установите неполную версию для IOS");
             } else {
                 System.out.println("Установите обычную версию для IOS");
             }
         } else {
             if (deviceYear < currentYear) {
-                System.out.println("Установите упрощенную версию для андройд");
+                System.out.println("Установите неполную версию для андройд");
             } else {
                 System.out.println("Установите обычную версию для андройд");
             }
