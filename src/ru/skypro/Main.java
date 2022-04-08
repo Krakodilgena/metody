@@ -1,12 +1,18 @@
 package ru.skypro;
 
 import java.time.LocalDate;
+import java.time.Year;
+
+import static java.time.Year.isLeap;
 
 public class Main {
 
+    public static void main(String[] args)
+
+
     public static void checkLeapYear(int year) {
 	//Задание 1
-        boolean leapYear = isLeap (year);
+        boolean leapYear = Year.isLeap (year);
         if (leapYear) {
             System.out.println(year + " - високосный год ");
         } else {
@@ -43,8 +49,8 @@ public class Main {
     }
 
     public static void validateString (String sort) {
-        char[] letters = str.toCharArray();
-        char preyChar = Character.MAX_VALUE;
+        char[] letters = sort.toCharArray();
+        char preyChar = Character.MAX_VALUE
         for (char c : letters)
             if (c == preyChar) {
                 System.out.println("Дубликат найден: " + c);
