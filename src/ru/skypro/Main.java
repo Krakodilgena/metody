@@ -7,8 +7,9 @@ import static java.time.Year.isLeap;
 
 public class Main {
 
-    public static void main(String[] args)
-
+    public static void main(String[] args){
+        checkLeapYear(2020);
+    }
 
     public static void checkLeapYear(int year) {
 	//Задание 1
@@ -50,13 +51,14 @@ public class Main {
 
     public static void validateString (String sort) {
         char[] letters = sort.toCharArray();
-        char preyChar = Character.MAX_VALUE
-        for (char c : letters)
+        char preyChar = Character.MAX_VALUE;
+        for (char c : letters){
             if (c == preyChar) {
                 System.out.println("Дубликат найден: " + c);
                 return;
             }
         preyChar = c;
+        }
         System.out.println("Дубликатов не найдено");
     }
 
